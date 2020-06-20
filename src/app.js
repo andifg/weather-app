@@ -6,6 +6,8 @@ const forcast = require('./utils/forcast')
 
 // Sets up express 
 const app = express()
+// Access environment variables
+const port = process.env.PORT || 3000
 
 
 
@@ -149,8 +151,8 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
 
-    console.log('Server is up on port 3000')
+    console.log('Server is up on port' + port)
 
 })
