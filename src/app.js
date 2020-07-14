@@ -24,7 +24,7 @@ app.set('view engine', 'hbs')
 const viewsPath = path.join(__dirname, '../templates/views')
 app.set('views', viewsPath)
 
-// Set up the partails path 
+// Set up the partials path 
 const partialsPath = path.join(__dirname, '../templates/partials')
 hbs.registerPartials(partialsPath)
 
@@ -98,9 +98,6 @@ app.get('/weather', (req, res) => {
 
 
 
-
-
-
 app.get('/product', (req, res) => {
     if (!req.query.search) {
         return res.send({
@@ -114,9 +111,6 @@ app.get('/product', (req, res) => {
         products: []
 
     })
-
-
-
 
 
 

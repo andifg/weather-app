@@ -27,7 +27,7 @@ const forecast = (latidude, longitude, callback) => {
             }
             return i;
           }
-            callback(undefined,'Aktuell '+ body.currently.summary + '.'+ body.daily.data[0].summary + ' Die Temperatur beträgt aktuell ' + body.currently.temperature + ' Grad. Es ist eine ' + body.currently.precipProbability + '% Chance, dass es heute regnet.'+'Die maximale Temperatur tritt um ' + timehigh+ ' Uhr auf und beträgt '+ body.daily.data[0].temperatureHigh + ' Grad. Die minimale Temperatur tritt um '+ timelow + ' Uhr auf und beträgt ' + body.daily.data[0].temperatureLow + ' Grad.')
+            callback(undefined,'Aktuell '+ body.currently.summary + '.'+ body.daily.data[0].summary + ' Die Temperatur beträgt aktuell ' + body.currently.temperature + ' Grad. Es ist eine ' + body.currently.precipProbability + '% Chance, dass es heute regnet.'+' Die maximale Temperatur tritt um ' + timehigh+ ' Uhr auf und beträgt '+ body.daily.data[0].temperatureHigh + ' Grad. Die minimale Temperatur tritt um '+ timelow + ' Uhr auf und beträgt ' + body.daily.data[0].temperatureLow + ' Grad.')
         }
 
     })
